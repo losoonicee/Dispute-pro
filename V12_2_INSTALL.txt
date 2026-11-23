@@ -1,0 +1,24 @@
+DISPUTE STUDIO 12.2 — BUREAU-AWARE ACCOUNT GROUPING
+
+Upload only these four files to the ROOT of your existing GitHub repository:
+  index.html
+  app.js
+  report-reader.js
+  sw.js
+Replace matching files and commit. Reopen website online after deployment.
+
+WHAT CHANGED
+- Same creditor + matching last 4 account digits groups screenshots from separate bureaus into one account, with bureau-specific facts retained.
+- Every source screenshot has a bureau selector (Experian, Equifax, TransUnion, or auto); changing it updates the account grouping.
+- If the bureau masks account references differently, choose two entries and tap Confirm same account after comparing original reports.
+- Confirmed links apply to the current scan; only when Save on and you import into a client case will links be saved for that client for future scans.
+- Different creditor or account references NEVER automatically prove the same account.
+- A primary creditor account and a collection tradeline must not be merged merely because the debt is related.
+- No automatic error/deletion claims. Review and substantiate before disputes.
+- Paid AI endpoint and code unchanged. Private credit notes NOT in upload.
+
+LIMITATIONS
+- This is rule-based identity linking, not machine-learning training.
+- Browser saved cases (when Save on) are unencrypted, so do not use for sensitive client data without secure hosting.
+- OCR reading accuracy depends on screenshot quality; this update specifically improves matching and bureau classification.
+- Existing saved clients/cases are not modified until you import or confirm a link. Back up first.
