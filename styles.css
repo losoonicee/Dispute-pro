@@ -101,3 +101,17 @@
 .reader-manual summary{font-size:14px;font-weight:700;cursor:pointer}
 .reader-manual .reader-correct-grid{margin:12px 0}
 @media(max-width:420px){.reader-ocr-review{padding:15px!important}.reader-ocr-page{padding:11px}.reader-ocr-page .row-wrap .btn{flex:1 1 125px}}
+
+
+/* Credit-report intake v14: focused, mobile-first document reader */
+.intake-upload h2,.intake-bureau h3{margin:7px 0 10px}
+.intake-main{width:100%;min-height:54px;font-size:1.04rem;justify-content:center}
+.intake-subrow{gap:10px;margin:10px 0 0}
+.intake-document-head{display:flex;flex-direction:column;gap:4px;padding:15px;border:1px solid var(--line,#364760);border-radius:14px;margin:14px 0;background:rgba(45,190,164,.065)}
+.intake-document-head strong{font-size:1.15rem}.intake-document-head span{color:var(--muted,#9caac4);font-size:.86rem}
+.intake-bureau{margin:14px 0;padding:14px;border:1px solid var(--line,#364760);border-radius:14px;background:rgba(255,255,255,.015)}
+.intake-bureau .row-between{gap:12px}.intake-bureau small{color:var(--muted,#9caac4)}
+.intake-fields{display:grid;gap:0}.intake-field{display:grid;gap:4px;padding:10px 0;border-top:1px solid var(--line,#34435a);overflow-wrap:anywhere}.intake-field>span{font-size:.8rem;color:var(--muted,#aebcd4)}.intake-field strong{font-size:.95rem;font-weight:600}.intake-field small{color:#ffd5a3}.intake-alt{opacity:.65}
+.intake-source{border:1px solid var(--line,#34435a);border-radius:12px;padding:13px;margin:10px 0}.intake-source summary{cursor:pointer;display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:space-between}.intake-source summary strong{overflow-wrap:anywhere}.intake-source textarea{font-size:15px;line-height:1.5;min-height:190px;white-space:pre-wrap;width:100%}.intake-source .field{margin:12px 0}
+.intake-raw-extra{padding-top:10px}.intake-raw-extra summary{font-size:.9rem;font-weight:600}.intake-paste{margin-top:12px}.intake-paste textarea{width:100%;margin-top:8px}.intake-ai>summary{font-size:.91rem}
+@media (min-width:640px){.intake-fields{grid-template-columns:1fr 1fr;column-gap:16px}}

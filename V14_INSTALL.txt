@@ -1,0 +1,15 @@
+Dispute Studio v14 — CREDIT REPORT INTAKE
+
+1. Back up any saved client data first.
+2. On GitHub repo losoonicee/Dispute-pro, upload FIVE files into its ROOT folder, replacing any matching ones:
+   index.html
+   app.js
+   styles.css
+   sw.js
+   intake-reader.js (NEW)
+3. Commit changes and reopen the website once while online.
+4. Reader → Choose screenshots or PDF. Reading begins immediately, then the document and each source transcript appear.
+5. Review values and correct OCR text; Save report document or print to PDF.
+
+AI: existing backend and key are untouched; optional AI requires your access code, explicit consent, and available API credits.
+Privacy: a downloaded document can contain personal credit-report text. Store securely and avoid uploading to public GitHub. Device saving is OFF by default; exported file stays on your device.
