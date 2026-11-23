@@ -1,0 +1,13 @@
+DISPUTE STUDIO AI 6 — SCREENSHOT READER FIX
+
+This release fixes the screenshot analysis workflow and adds autofill after review.
+
+Update GitHub Pages: Upload and replace at the REPOSITORY ROOT: report-reader.js, styles.css, index.html, sw.js. You must commit and let GitHub Pages publish. Reopen the Home Screen app while online (close/reopen twice to activate the new service worker). NEVER delete your installed Home Screen app before exporting your cases.
+
+Run: Open Reader -> Upload multiple screenshots or scanned PDF -> under AI connection settings enter AI_ACCESS_CODE -> check authorization consent -> Read ALL screenshots with AI. AI scans ALL screenshot images in batches of two, stages accounts and profile details, and lets you read AI explanations aloud. Tap Review & autofill my case, confirm checked information, and review your case and letters afterward. No allegation is auto-asserted.
+
+The backend URL is prefilled as https://dispute-studio-ai-backend.vercel.app/api/analyze-report; if your actual backend differs, change the field. The key belongs only in the Vercel environment, NOT in GitHub, HTML, or this app. The code never saves it in localStorage.
+
+Older backend versions can provide the basic account fields but may not populate dates, original creditor or profile. Upgrade the Vercel backend to API v6 to autofill those fields. Only open actual private credit reports with appropriate client authorization. No secure login or per-client access control is provided; do not use for paying clients without a security assessment.
+
+Back up client cases before updating. GitHub Pages is public; never upload actual reports or credentials to the repository.
