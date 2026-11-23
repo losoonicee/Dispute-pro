@@ -1,7 +1,7 @@
 {
-  "name": "Dispute Studio Fusion \u2014 Credit Case Workspace",
+  "name": "Dispute Studio AI 7 — Credit Case Workspace",
   "short_name": "Dispute Studio",
-  "description": "Report Reader, case manager and Deep Dispute Desk in one iPhone Home Screen app.",
+  "description": "AI screenshot report reader, three-bureau comparison, per-bureau dispute letters, evidence and response tracking.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

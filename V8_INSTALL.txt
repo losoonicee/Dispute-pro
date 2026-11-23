@@ -1,0 +1,22 @@
+DISPUTE STUDIO AI — READER REPAIR 8.0 (iPhone)
+
+Before updating: In the existing Dispute Studio app, tap Settings and export a FULL BACKUP. Do not delete your Home Screen app, which could erase locally stored cases.
+
+EASY GITHUB UPDATE
+1. Unzip the smaller ZIP using the iPhone Files app.
+2. Open https://github.com/losoonicee/Dispute-pro/upload/main in Safari.
+3. Upload index.html, app.js, report-reader.js, and sw.js to the root of the repository, REPLACING the existing four files.
+4. Commit changes and wait for GitHub Pages deployment to report success.
+5. Close/reopen the existing Home Screen app while connected to the internet. The top should show Dispute Studio 8.0.
+
+TEST THE READER
+- Reader > AI connection settings: use https://dispute-studio-ai-backend.vercel.app/api/analyze-report and your PRIVATE AI_ACCESS_CODE (never your OpenAI API key).
+- Use 'Check connection' for a no-charge, no-credit-report test of the server and private code.
+- Use 'Test AI model (fictional)' to verify actual AI output. This may incur small API usage costs; no client report is sent.
+- If both tests pass, check authorization and tap 'Upload & read with AI'. Screenshot processing occurs only after authorization and a private code is present.
+- Review extracted fields and original screenshots before importing. Nothing is automatically submitted or disputed.
+
+LIMITATIONS
+Testing with synthetic data and browser mocks passed. Live AI API billing and real screenshot reading have not been verified through this package.
+The browser's local storage and exported case files are NOT encrypted. Do not use for paying client sensitive reports without proper authentication and safeguards.
+Never paste API keys into public code or your GitHub repository.

@@ -1,35 +1,27 @@
-DISPUTE STUDIO FUSION 4.0 — iPHONE HOME SCREEN WEB APP
-===================================================
-This package combines Dispute Studio 3.0 and the FULL user-provided Dispute Desk 2 ZIP.
-It is a complete, functional set of static website files, not a mockup or AI chat service.
+DISPUTE STUDIO AI 7 — IPHONE CASE WORKSPACE
 
-WHAT'S IN THE APP
-- HOME — blended indigo/teal dashboard; case progress and shortcuts
-- CASES — independent client profiles and multiple accounts per client
-- READER — PDF text extraction, screenshot OCR (Tesseract), pasted report analysis, suggested review paths, voice explanations, editable OCR fields and verified observations
-- LETTERS — seven straightforward letter workflows, autofill, signatures, packet preview/PDF/print
-- DEEP DESK — COMPLETE uploaded Dispute Desk 2 engine with detailed case questions, collector validation, follow-ups, creditor address directory, identity theft and breach guides, evidence, signing and print-ready letters. A new matching navigation dock links back to Studio or Reader.
-- EVIDENCE/LEARN — still accessible from Home, case page and Deep Desk. Neither tool is removed.
-- CROSS-WORKFLOW CASE COPY — select a case/item in Studio > Deep Desk > Send current credit item; return via 'Send case to Studio' to create a separate Studio client profile. Review every field on both sides; no automatic sends or filing.
+This release combines the original Deep Dispute Desk with the Studio workflow and the new, review-first three-bureau comparison.
 
-IMPORTANT: The two editors have SEPARATE local case stores (Studio supports multiple clients; Deep Desk supports one working case). Moving a case creates a COPY, not a live sync. On entering Deep Desk from a Studio client, the new Deep Desk copy starts with saving OFF to avoid overwriting a previous Deep Desk case. Export a case code in Deep Desk first if you have important unfinished work there.
+FEATURES
+- On iPhone, upload credit-report screenshots, PDF pages, or text from an authorized consumer.
+- Local PDF text extraction, optional local OCR (requires first-load CDN), optional consent-based AI vision via the separately deployed Vercel backend.
+- Batch scan multiple images (2 images per AI request); voice read-aloud explains each account; private access code must be entered per session.
+- A three-bureau comparison matrix shows each report's values separately without assuming discrepancies are errors.
+- Source image buttons let the consumer cross-check the AI transcript against the uploaded image previews.
+- Auto-fill reviewed consumer and account details into separate local case profiles. Accounts with different last-four references are not automatically combined.
+- Letter Studio has bureau-specific source values; multi-bureau cases require a separate, explicitly described factual dispute per bureau before a letter can be marked ready.
+- Finger signatures, PDF export, original Deep Desk, evidence vault, timelines and manually recorded bureau outcomes.
 
-UPDATE YOUR EXISTING GITHUB PAGES APP — iPHONE
-1. On the installed app, export a FULL backup first (Settings > Full backup + evidence).
-2. Download this ZIP and unzip it in iPhone Files.
-3. Open https://github.com/losoonicee/Despite-center-/upload/main in Safari. Upload the individual FILES from the unzipped folder at repository ROOT. Don't upload the ZIP or outer folder. The existing files with the same names should be replaced.
-4. Commit changes. GitHub Pages must already use main and /(root). The update creates advanced-desk.html and more icons in addition to replacing the Studio files.
-5. After GitHub Pages finishes publishing, open your site while online. Close and reopen the Home Screen app to refresh its cache. DO NOT delete your existing Home Screen icon—it could erase locally saved cases.
-6. If using credit-repair- instead of Despite-center-, upload the same contents to THAT repo and keep using its existing URL.
+UPDATE WITHOUT DELETING YOUR HOME SCREEN APP
+Use the small five-file iPhone update ZIP if your live GitHub repository already contains the full Studio app and Deep Desk page. Back up your local case data first.
+Upload index.html, app.js, report-reader.js, styles.css, sw.js into the repository root, replacing existing files. Commit, let GitHub Pages update, then close/reopen the iPhone Home Screen app while online. Do NOT delete the app icon; that could remove its local case storage.
 
-SAFETY & PRIVACY
-- Public GitHub contains ONLY app code and illustrations. NEVER upload credit reports, client photos, case exports or identity documents to a public repository.
-- The app stores data locally only if saving is enabled in the relevant workflow. Device storage and backups are NOT encrypted. Keep records out of shared devices and use device security.
-- No AI server is integrated. OCR and rule-based guidance can misread reports. You must compare all extracted fields to the originals.
-- PDF.js and Tesseract.js are loaded from third-party CDNs on first use and may need internet even when the rest of the app works offline. They are not a cloud-based review service; review their privacy/security suitability for client data.
-- Dispute suggestions are not evidence of inaccuracy, and the app does not submit anything or guarantee deletion.
-- A dispute letter does not suspend a lawsuit deadline. Use only truthful, supported claims; do not treat a data breach as proof a specific account was fraudulent.
-- Obtain client authorization. Verify all recipient mailing addresses from an official source before sending.
+FIRST-TIME NEW SITE
+Upload all files in this ZIP to your site's repository root. Publish with GitHub Pages main / (root). The Vercel API backend is a separate deployment and is not embedded here.
 
-FILES
-index.html, advanced-desk.html, app.js, report-reader.js, styles.css, sw.js, manifest.webmanifest, icon.svg, icon-192.png, icon-512.png, icon-maskable-192.png, icon-maskable-512.png, apple-touch-icon.png, favicon.png, README.txt
+PRIVATE AI BACKEND
+Endpoint: https://dispute-studio-ai-backend.vercel.app/api/analyze-report
+The OPENAI_API_KEY is a private server-side Vercel Secret. Do not put an API key in GitHub or the app. The app asks for the separate AI_ACCESS_CODE, which stays in session memory. The backend must be deployed and configured separately. API usage can incur charges. The AI analysis workflow was tested with mock model responses; real account scanning still requires device and service testing.
+
+IMPORTANT SAFETY
+The demo has fictional financial data. Local case storage and backups are not encrypted, and this software is NOT ready for multiple paying clients, shared accounts or regulatory certification. Never upload private client data into public GitHub. Obtain authorization and verify all extracted facts. Disputes must be truthful and supported by evidence. Actual negative information is not necessarily inaccurate. The app does not send disputes or override court deadlines. Commercial use requires appropriate hosting and legal/security review.
