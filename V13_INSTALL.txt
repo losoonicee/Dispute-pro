@@ -1,0 +1,12 @@
+DISPUTE STUDIO 13.0 — SIMPLE READER
+For existing Dispute Studio 12.x installations.
+
+1. Export a case backup before updating.
+2. Replace index.html, app.js, report-reader.js and sw.js in the root of the existing Dispute-pro GitHub repository. Commit all four together.
+3. Reopen the same site online. Confirm the header says 13.0. Do not delete the Home Screen app or clear its website data.
+4. Reader: choose One account (default) or Full report. Add screenshots/PDF, then tap Analyze report.
+5. Optional AI: open AI connection settings, enter the existing private access code, and approve sending the report. The existing backend URL and server-side API key are unchanged. A successful AI response is used first. If AI fails, free OCR takes over. The access code remains session-only; no API key belongs in this public app.
+6. Check the grouped account, each bureau, and the repair plan. If identities conflict, select the correct account or confirm a match in Sources. Choose a dispute only for an actual verified reporting error. Save and prepare letters.
+7. The Knowledge Vault is under the collapsed learning notes section. Existing private notes and cases use their existing storage keys. The public update contains no private notes.
+
+TESTS: Four fictional source transcripts grouped into one account and two bureau records; verified Equifax-only balance issue imported into letters. Mock AI success used two batches for four PNGs and did not invoke OCR. Mock HTTP 502 automatically fell back to actual bundled OCR on a fictional screenshot and extracted the account ending and balance. Browser UI tested in Chromium with mobile dimensions, not physical iPhone. Live AI provider and real user screenshots have not been tested. Free OCR remains fallible and may require correction.
