@@ -1,102 +1,41 @@
-DISPUTE STUDIO — iPhone-first credit case workspace
-Version 1.0 | November 2026
-========================================
+DISPUTE STUDIO 3.0 — COMPLETE iPHONE WEB APP
+==========================================
 
-WHAT'S IN THIS APP
-- Five-tab iPhone-first design: Home, Cases, Letters, Evidence, Learn.
-- Unlimited client profiles and multiple credit-report items for each profile.
-- A fictional, prefilled Alex Morgan example.
-- Collection, charge-off, late-payment, inquiry, personal-information,
-  repossession, public-record and other reporting categories.
-- Specific-error checklists, collector validation questions and document checklist.
-- Live letter drafts for Experian, Equifax, TransUnion, debt collectors,
-  direct furnishers, goodwill, identity theft, personal information and inquiries.
-- Separately confirmed bureau/collector letters, plus a ready-letter PDF packet.
-- Draw-your-own finger signature (never saved in the browser or in a case code).
-- Download or iPhone-share PDFs, copy letter text, and print.
-- Multiple image and PDF attachments per item; no built-in file count cap.
-  Actual limits are your browser's storage quota and device free space.
-- Optional local device saving (OFF by default), full JSON backup including
-  attachments, JSON restore, case code for transferring one profile.
-- Legal education, official bureau submission links, and timelines.
-- Installable offline-friendly Progressive Web App (PWA) when hosted over HTTPS.
+THIS IS THE COMPLETE WEBSITE, NOT AN UPDATE PATCH.
 
-HOW TO INSTALL ON YOUR iPHONE
-The ZIP is an actual website, not an App Store IPA. To install it as a Home
-Screen web app, first publish the files at a secure HTTPS URL. GitHub Pages
-is one free option:
+WHAT'S INCLUDED
+• Client profiles and multiple reporting items per client
+• Report Reader: PDFs, screenshots, multiple images, TXT and pasted report text
+• Text PDF extraction (PDF.js) and scanned page OCR (Tesseract.js), run locally in your browser
+• Voice explanations: "Read it to me", "Explain all", and individual account listening, with speed settings
+• Review explanations: collection, charge-off, payment history, balances, account dates, utilization
+• Suggested routes for investigation, including validation requests, bureau disputes, and goodwill requests
+• CORRECT OCR FIELDS before importing to case — name, masked account number, balance, limit, status, dates, bureau, type
+• Your Insight text box, supporting records and an explicit verification checkbox
+• Autofill client info, account details, case notes, and reviewed dispute letter drafts
+• Seven letter workflows, printable PDF packets, signature canvas, bureau/collector route, deadline tracking
+• Evidence Vault for screenshots and PDF attachments; separate profiles
+• Offline cache and Home Screen app, including top Dynamic Island safe-area spacing
+• Backup and restore of local saved data
 
-1. Download dispute-desk-studio.zip to your iPhone's Files app.
-2. Tap it to unzip. Inside the folder you'll see index.html, app.js,
-   styles.css, the icons, manifest.webmanifest and sw.js.
-3. In Safari, go to https://github.com and sign in (or create an account).
-4. Create a NEW PUBLIC repository, such as 'dispute-studio'. A public
-   GitHub Pages repository exposes the app's CODE, not its local case files.
-5. Use 'Add file' > 'Upload files' to upload ALL files from the unzipped
-   folder into the TOP LEVEL (root) of the repository. Commit changes.
-6. In repository Settings > Pages, select 'Deploy from a branch', then
-   the 'main' branch and '/ (root)' folder. Save.
-7. Open your Pages address in Safari, typically:
-       https://YOUR-USERNAME.github.io/dispute-studio/
-8. From Safari, tap Share > Add to Home Screen; if offered, select
-   'Open as Web App'. Add it, then open the new icon.
-
-The exact GitHub/iOS wording may change. You can also host the same files on
-another reputable static HTTPS host. Keep file names and paths unchanged.
-Opening index.html directly from the Files app may not provide reliable local
-storage, offline installation or PDF behavior; hosting is recommended.
-
-FIRST USE
-1. Tap 'Explore example' to inspect the fictional workflow, or tap
-   'New client / case' to create a blank client.
-2. Select the client and the reporting account in Cases. Enter only the
-   account's masked reference or last 4 digits (never the full number).
-3. Select only factual errors supported by the person's records.
-4. Go to Evidence to attach report screenshots and supporting files.
-5. Go to Letters. Select a template and bureau, then review the live draft.
-6. Fix missing fields; affirm that every statement is true; draw a signature.
-7. Save/Share PDF or use the packet builder for multiple ready letters.
-8. Submit separately at each official bureau/collector site or by mail.
-   The app NEVER submits, sends, signs, or contacts anyone automatically.
-9. Record actual delivery dates and compare results with the source records.
-
-PRIVACY & BACKUPS
-- Saving is OFF at startup. With it OFF, refreshing/reloading clears the case.
-- With saving ON, cases are stored in the browser localStorage and evidence
-  is stored in IndexedDB. THIS STORAGE IS NOT ENCRYPTED.
-- The app has no backend, login, server-side storage, sync or analytics.
-- Export full backups regularly, especially before clearing browser data,
-  using another phone, or changing the website's URL. The backup is plain text
-  plus encoded attachments, NOT ENCRYPTED. Protect it like client records.
-- A signature exists in memory only; it is not saved after reload, case code
-  transfer or backup, and must be drawn again when needed.
-- Case code transfers profile and item details but NO files or signatures.
-- The live site is public code. Any data you type into a browser stays only
-  on that device unless you deliberately export or share it.
-- Do not enter SSNs, dates of birth, government ID images, passwords, security
-  answers, one-time codes, full account numbers or high-risk confidential data.
-- For professional client use, implement an appropriately secure system,
-  authorization/contract workflows, records policies and regulatory compliance.
+PUBLISH IN GITHUB (on your iPHONE)
+1. Export a FULL BACKUP from the existing app Settings if you have any client data. Do not delete the Home Screen app.
+2. Unzip this ZIP using Files on your iPhone. You should see the individual website files.
+3. Open GitHub repository > Add file > Upload files. Upload ALL website files directly at repository ROOT, not a parent folder and not the ZIP itself.
+4. GitHub may ask you to replace existing files. Keep each filename exactly the same. Tap Commit changes.
+5. Go to Settings > Pages > Build and deployment > Deploy from a branch > main > /(root), if not already enabled.
+6. Open the live GitHub Pages URL in Safari. The installed app updates via its offline cache on subsequent launches. Fully close and reopen while online.
+7. Safari > Share > Add to Home Screen for a new installation. If you already installed it, do not delete the old icon as that could erase device-saved cases.
 
 IMPORTANT
-This is an organizational/educational tool; it does not guarantee
-corrected/deleted credit entries or perform legal representation. Accurate
-negative items aren't automatically removed by disputing. A debt collector
-validation process differs from credit-bureau reinvestigation. A dispute
-letter does not pause a lawsuit response deadline. Only assert identity theft
-if it actually happened and the supporting documents are accurate.
+• This is a RULE-BASED reader, not a general AI assistant like Claude. It can miss accounts or OCR amounts. Verify every extracted item against the original report.
+• A suggested "dispute path" is not proof of an error. Accurate negative information is generally not removed by a factual dispute just for being negative.
+• The app does NOT submit disputes or contact bureaus automatically, and cannot guarantee outcomes. A dispute letter does not pause court deadlines.
+• Saving is OFF by default. Turn saving ON if you want cases to persist on this device. Local storage is not encrypted.
+• Do not store full SSNs, complete account numbers, passwords, or one-time codes.
+• Never upload actual client reports or case backups to a PUBLIC GitHub repository.
+• PDF.js/Tesseract.js runtime scripts are loaded from third-party CDNs as needed; first-time internet access is required for PDF/OCR functionality.
+• Keep separate client profiles and obtain authorization before processing another person's financial data.
 
-LINKS
-Experian: https://www.experian.com/help/dispute-credit/
-Equifax: https://www.equifax.com/personal/credit-report-services/credit-dispute/
-TransUnion: https://www.transunion.com/credit-disputes/dispute-your-credit
-Credit reports: https://www.annualcreditreport.com/
-FTC identity theft: https://www.identitytheft.gov/
-CFPB bureau investigation timing:
-https://www.consumerfinance.gov/ask-cfpb/how-long-does-it-take-to-repair-an-error-on-a-credit-report-en-1339/
-CFPB collector disputes:
-https://www.consumerfinance.gov/ask-cfpb/can-a-debt-collector-still-collect-a-debt-after-ive-disputed-it-en-338/
-
-This is an independent original implementation and is not affiliated with,
-endorsed by, or connected to Claude, Experian, Equifax, TransUnion,
-or McKenzie Adams Credit Repair.
+FILES
+index.html, app.js, report-reader.js, styles.css, sw.js, manifest.webmanifest, icon.svg, icon-192.png, icon-512.png, README.txt
