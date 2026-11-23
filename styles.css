@@ -28,3 +28,32 @@
 @media(max-width:360px){.reader-correct-grid{grid-template-columns:1fr}.reader-metrics span{font-size:9px}}
 /* Dynamic Island/status bar: ensure standalone Home Screen mode remains tappable. */
 @media (display-mode:standalone) and (max-width:999px){.app-header{--standalone-top-inset:max(60px, env(safe-area-inset-top,0px));height:calc(var(--header) + var(--standalone-top-inset));padding-top:var(--standalone-top-inset)}.modal-root{padding-top:max(16px, env(safe-area-inset-top,0px))}}
+
+/* Dispute Studio Fusion: merge the uploaded Desk 2 indigo/cyan with Studio mint/navy. */
+:root{--accent:#a39cff;--mint:#6be4cf;--surface:#131e34;--surface2:#1c2c49}
+.brand-mark{position:relative;background:linear-gradient(135deg,#a58cff 0%,#698bff 50%,#57ead5 100%);color:#0d1931;box-shadow:0 8px 23px #5c5cea4d;font-weight:1000}
+.brand-mark .mark-dot{position:absolute;right:-5px;top:-7px;background:#122a43;color:#9ffce9;border:1px solid #6bdfce77;border-radius:100%;width:16px;height:16px;font-size:10px;display:grid;place-items:center}
+.fusion-tag{display:inline-block;font-size:8px;letter-spacing:.13em;font-weight:900;color:#89edda;border:1px solid #5ee2cd5a;border-radius:4px;padding:2px 4px;vertical-align:middle;margin-left:2px}
+.hero{background:linear-gradient(125deg,#40307f,#263775 45%,#164e5b 100%);border-color:#a69af06b;box-shadow:0 18px 60px #302a7a50}
+.hero::after{box-shadow:0 0 0 44px #e1aaff08,0 0 0 100px #bde9ff09}
+.fusion-panel,.fusion-banner{position:relative;overflow:hidden;background:linear-gradient(115deg,#24275b,#1a3655 60%,#16504d);border:1px solid #6ca7bd69;border-radius:22px;box-shadow:0 14px 36px #080f2860}
+.fusion-panel{display:flex;align-items:flex-start;gap:15px;padding:20px 18px;margin:18px 0 24px}
+.fusion-panel-icon{width:47px;height:47px;flex:0 0 47px;display:grid;place-items:center;font-size:29px;border-radius:15px;color:#e7d6ff;background:#8570d13b}
+.fusion-panel-kicker,.fusion-stars{font-size:10px;letter-spacing:.17em;font-weight:850;color:#9bf8e4}
+.fusion-panel h3{font-size:20px;margin:4px 0 5px}
+.fusion-panel p,.fusion-banner p{color:#d1d9f5;font-size:13px;line-height:1.58;margin:7px 0 14px}
+.fusion-banner{padding:25px 20px;margin:10px 0 22px}
+.fusion-banner::after{content:'✦';position:absolute;color:#92e2ee16;font-size:200px;right:-22px;top:-70px;pointer-events:none}
+.fusion-banner h2{font-size:29px;position:relative;max-width:420px;margin:8px 0}
+.fusion-banner .btn,.fusion-banner p,.fusion-banner .row-wrap{position:relative;z-index:1}
+.fusion-banner .fusion-fine{color:#afc1db;font-size:11px;margin:14px 0 0}
+.fusion-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.fusion-feature{background:linear-gradient(135deg,#1e2a47,#15253c);border:1px solid #54648469;border-radius:17px;padding:15px 13px;min-width:0}
+.fusion-feature>span{display:grid;place-items:center;width:35px;height:35px;border-radius:12px;background:#4e468e7a;color:#b8fff0;font-size:22px;margin-bottom:12px}
+.fusion-feature>strong{display:block;color:#f6f7ff;font-size:13px;line-height:1.32}
+.fusion-feature p{color:#abb9d4;font-size:11.5px;line-height:1.47;margin:7px 0 0}
+.fusion-cta{background:#2a3055;color:#e3e7ff;border:1px solid #8386ed8a}
+.nav-btn{min-height:56px}
+@media(max-width:520px){.fusion-panel{gap:12px;padding:17px 14px}.fusion-panel-icon{width:39px;height:39px;flex-basis:39px}.fusion-banner h2{font-size:26px}.fusion-feature-grid{gap:8px}.fusion-feature{padding:13px 10px}.fusion-feature p{font-size:11px}.bottom-nav{padding-bottom:calc(7px + env(safe-area-inset-bottom))}}
+@media(min-width:680px){.fusion-feature-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (display-mode:standalone) and (max-width:999px){.app-header{--standalone-top-inset:max(60px,env(safe-area-inset-top,0px));height:calc(var(--header) + var(--standalone-top-inset));padding-top:var(--standalone-top-inset)}}

@@ -1,1 +1,39 @@
-{"name":"Dispute Studio — Credit Case Workspace","short_name":"Dispute Studio","description":"Private, offline-friendly dispute case and letter workspace","start_url":"./","scope":"./","display":"standalone","display_override":["standalone"],"background_color":"#0b1120","theme_color":"#10182b","icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},{"src":"icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
+{
+  "name": "Dispute Studio Fusion \u2014 Credit Case Workspace",
+  "short_name": "Dispute Studio",
+  "description": "Report Reader, case manager and Deep Dispute Desk in one iPhone Home Screen app.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
+  "background_color": "#0b1120",
+  "theme_color": "#121c35",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
