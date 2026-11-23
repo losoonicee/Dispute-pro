@@ -1,4 +1,4 @@
-const CACHE='dispute-studio-fusion-v11.0.0';
+const CACHE='dispute-studio-fusion-v12.1.0';
 const ASSETS=['./','./index.html','./advanced-desk.html','./styles.css','./app.js','./report-reader.js','./credit-knowledge.js','./dd2-core.js','./dd2-parser.js','./dd2-ocr-engine.js','./dd2-ocr-data.js','./offline-desk.html','./pdfjs.js','./pdfjs-worker.js','./icon.svg','./icon-192.png','./icon-512.png','./icon-maskable-192.png','./icon-maskable-512.png','./apple-touch-icon.png','./favicon.png','./manifest.webmanifest'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('dispute-studio-fusion-')||k.startsWith('dispute-studio-v')||k.startsWith('dd2-core-')).filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
